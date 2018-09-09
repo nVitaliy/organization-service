@@ -2,7 +2,8 @@ spring:
   application:
     name: organization-service
   profiles:
-    active: default
+    active:
+      default
   cloud:
     config:
-      enabled: true
+      uri: http://localhost:8889

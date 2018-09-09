@@ -1,0 +1,11 @@
+version: '3'
+services:
+  licensingservice:
+    image: study-organization-service:ls2
+    ports:
+    - "8085:8085"
+    environment:
+      PROFILE: "default"
+      CONFIGSERVER_URI: http://configserver:8889
+      CONFIGSERVER_PORT: "8889"
+      DATABASESERVER_PORT: "5432"
